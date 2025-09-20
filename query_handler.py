@@ -27,10 +27,12 @@ class QueryHandler:
         """Classify the type of query: sql, rag, or general"""
         sql_keywords = ['how many', 'count', 'average', 'sum', 'maximum', 'minimum', 
                        'list all', 'show all', 'total', 'highest', 'lowest', 
-                       'which temple', 'which sector', 'footfall greater than']
+                       'which temple', 'which sector', 'footfall greater than','oldest','top','newest']
         
-        rag_keywords = ['tell me about', 'information about', 'details of', 
-                       'what do you know about', 'describe', 'explain about']
+        rag_keywords = ["tell me about", "information about", "details of",
+                        "what do you know about", "describe", "explain about",
+                        "explain", "elaborate", "in detail", "overview", "summary",
+                        "background", "context", "insights", "highlights", "key facts"]
         
         query_lower = query.lower()
         
