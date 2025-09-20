@@ -61,7 +61,29 @@ def chat():
             metadata['sql_query'] = sql_query
             
             sql_result = query_handler.execute_sql(sql_query)
-            response = query_handler.format_sql_response(user_query, sql_result)
+            
+            # Check if SQL failed or returned no results
+            if not sql_result['success'] or sql_result.get('row_count', 0) == 0:
+                logger.info("SQL query failed or returned no results, falling back to RAG")
+                
+                # Fallback to RAG system
+                search_results = rag_handler.search(user_query, top_k=3)
+                response = query_handler.format_rag_response(user_query, search_results)
+                
+                metadata['fallback'] = 'rag'
+                metadata['search_results'] = len(search_results)
+                metadata['original_error'] = sql_result.get('error', 'No results found')
+                
+                # Add context about the fallback
+                if search_results:
+                    response = f"{response}"
+                else:
+                    # If RAG also fails, try general LLM
+                    response = query_handler.handle_general_query(user_query)
+                    metadata['fallback'] = 'general'
+            else:
+                # SQL succeeded with results
+                response = query_handler.format_sql_response(user_query, sql_result)
             
         elif query_type == 'rag':
             # Handle RAG queries

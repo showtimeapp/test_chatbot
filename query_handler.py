@@ -116,10 +116,10 @@ class QueryHandler:
     def format_sql_response(self, query: str, sql_result: Dict) -> str:
         """Format SQL results into natural language using OpenAI"""
         if not sql_result['success']:
-            return f"I encountered an error while processing your query: {sql_result['error']}"
+            return None
         
         if sql_result['row_count'] == 0:
-            return "No results found for your query."
+            return None
         
         # Prepare data for formatting
         data_str = f"Columns: {sql_result['columns']}\n"
@@ -179,7 +179,7 @@ class QueryHandler:
         prompt = f"""
         Based on the following temple information from our database, please provide a comprehensive 
         and helpful answer to the user's question. Use the information provided to give specific 
-        details, and if relevant, mention multiple temples that match their query.
+        details.
         
         User Question: {query}
         
