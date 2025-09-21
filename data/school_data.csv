@@ -1,0 +1,21 @@
+schoolName,address,sector,ward,board,mediumOfInstruction,grade,averageFees,students,teachers,classrooms,studentClassroomRatio,studentTeacherRatio,principal
+Nahar International School,"Nahar's Amrit Shakti, Chandivali Farm Road, Off Saki Vihar Road, Andheri (East), Mumbai – 400072",S1,183,State Board,English,Nursery To 10th,100,200,10,5,12:1,16:3,Aarav Mehta
+Saint Francis D'Assisi High School,"Mount Poinsur, S.V.P. Road, Borivali (West), Mumbai – 400103",S2,184,State Board,English,Nursery To 10th,140,349,20,10,12:2,16:4,Sanya Kapoor
+"Delhi Public School, Vasant Kunj","Pocket V, Sector-C, Vasant Kunj, New Delhi – 110070",S3,185,State Board,English,Nursery To 10th,180,240,30,15,12:3,16:5,Rohan Deshmukh
+Suraj Bhan DAV Public School,"F-10/15, Vasant Vihar, New Delhi – 110057",S4,186,State Board,English,Nursery To 10th,220,140,40,20,12:4,16:6,Priya Nair
+Bhatnagar International School,"Sector B, Pocket 10, Vasant Kunj, New Delhi – 110070",S5,187,State Board,English,Nursery To 10th,260,500,50,25,12:5,16:7,Kabir Malhotra
+Mary Immaculate Girls’ High School,"Mount Poisar, Mandapeshwar Road, Borivali (West), Mumbai – 400103",S6,188,State Board,English,Nursery To 10th,300,200,60,30,12:6,16:8,Ananya Iyer
+"Campion School, Mumbai","13 Cooperage Road, Fort, Mumbai – 400001",S1,189,State Board,English,5th to 7th,340,349,70,35,12:7,16:9,Vikram Sharma
+St. Xavier’s High School,"Vile Parle Church Road, Vile Parle (West), Mumbai – 400056",S2,183,State Board,English,5th to 7th,380,240,80,40,12:8,16:10,Neha Kulkarni
+"Bombay Scottish School, Mahim","Veer Savarkar Marg, Mahim West, Mumbai – 400016",S3,184,State Board,English,5th to 7th,420,140,90,45,12:9,16:11,Arjun Reddy
+"Oxford Public School, Charkop","Plot No. 9, Sector 5, Charkop, Kandivali West, Mumbai – 400067",S4,185,State Board,English,5th to 7th,460,100,100,50,12:10,16:12,Meera Joshi
+"Holy Cross Convent School, Mira Road","Station Road, Near St. Joseph Church, Sheetal Nagar, Mira Road, Thane – 401107",S5,186,State Board,English,5th to 7th,500,400,110,55,12:11,16:13,Rahul Verma
+Singapore International School,"Next to Thakur Mall, NH-8, Dahisar East, Mumbai – 401104",S6,187,State Board,English,5th to 7th,540,50,120,60,12:12,16:14,Ishita Banerjee
+"Dayanand Anglo Vedic Public School, Airoli","Plot No. 11, Sector 10, Airoli, Navi Mumbai – 400708",S1,188,State Board,English,5th to 7th,580,124,130,65,12:13,16:15,Kunal Singh
+NES International School,"Swapna Nagari, Malabar Hill Road, Mulund West, Mumbai – 400082",S2,189,State Board,English,9th to 12th,620,124,140,70,12:14,16:16,Divya Rao
+Amchi Shala,"J. K. Karmalkar Marg, Tilak Nagar, Mumbai – 400089",S3,183,State Board,English,9th to 12th,660,56,150,75,12:15,16:17,Siddharth Chatterjee
+The Cathedral & John Connon School,"6 Purshottamdas Thakurdas Marg, Fort, Mumbai – 400001",S4,184,State Board,Semi English,9th to 12th,700,90,160,80,12:16,16:18,Pooja Shah
+Ascend International School,"H Block, Bandra Kurla Complex, Bandra East, Mumbai – 400051",S5,185,State Board,Semi English,9th to 12th,740,144,170,85,12:17,16:19,Aditya Patil
+"St. Mary’s School, ICSE","Mazagaon, Nesbit Road, Mumbai – 400010",S6,186,State Board,Semi English,9th to 12th,780,693,180,90,12:18,16:20,Simran Kaur
+Podar International School,"Santacruz West, Mumbai – 400054",S1,187,State Board,Semi English,9th to 12th,820,55,190,95,12:19,16:21,Manish Gupta
+"Ryan International School, Malad","Evershine Nagar, Malad West, Mumbai – 400064",S2,188,State Board,Semi English,9th to 12th,860,743,200,100,12:20,16:22,Tanvi Agarwal
