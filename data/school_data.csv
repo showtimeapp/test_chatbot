@@ -1,21 +1,31 @@
 schoolName,address,sector,ward,board,mediumOfInstruction,grade,averageFees,students,teachers,classrooms,studentClassroomRatio,studentTeacherRatio,principal
-Nahar International School,"Nahar's Amrit Shakti, Chandivali Farm Road, Off Saki Vihar Road, Andheri (East), Mumbai – 400072",S1,183,State Board,English,Nursery To 10th,100,200,10,5,12:1,16:3,Aarav Mehta
-Saint Francis D'Assisi High School,"Mount Poinsur, S.V.P. Road, Borivali (West), Mumbai – 400103",S2,184,State Board,English,Nursery To 10th,140,349,20,10,12:2,16:4,Sanya Kapoor
-"Delhi Public School, Vasant Kunj","Pocket V, Sector-C, Vasant Kunj, New Delhi – 110070",S3,185,State Board,English,Nursery To 10th,180,240,30,15,12:3,16:5,Rohan Deshmukh
-Suraj Bhan DAV Public School,"F-10/15, Vasant Vihar, New Delhi – 110057",S4,186,State Board,English,Nursery To 10th,220,140,40,20,12:4,16:6,Priya Nair
-Bhatnagar International School,"Sector B, Pocket 10, Vasant Kunj, New Delhi – 110070",S5,187,State Board,English,Nursery To 10th,260,500,50,25,12:5,16:7,Kabir Malhotra
-Mary Immaculate Girls’ High School,"Mount Poisar, Mandapeshwar Road, Borivali (West), Mumbai – 400103",S6,188,State Board,English,Nursery To 10th,300,200,60,30,12:6,16:8,Ananya Iyer
-"Campion School, Mumbai","13 Cooperage Road, Fort, Mumbai – 400001",S1,189,State Board,English,5th to 7th,340,349,70,35,12:7,16:9,Vikram Sharma
-St. Xavier’s High School,"Vile Parle Church Road, Vile Parle (West), Mumbai – 400056",S2,183,State Board,English,5th to 7th,380,240,80,40,12:8,16:10,Neha Kulkarni
-"Bombay Scottish School, Mahim","Veer Savarkar Marg, Mahim West, Mumbai – 400016",S3,184,State Board,English,5th to 7th,420,140,90,45,12:9,16:11,Arjun Reddy
-"Oxford Public School, Charkop","Plot No. 9, Sector 5, Charkop, Kandivali West, Mumbai – 400067",S4,185,State Board,English,5th to 7th,460,100,100,50,12:10,16:12,Meera Joshi
-"Holy Cross Convent School, Mira Road","Station Road, Near St. Joseph Church, Sheetal Nagar, Mira Road, Thane – 401107",S5,186,State Board,English,5th to 7th,500,400,110,55,12:11,16:13,Rahul Verma
-Singapore International School,"Next to Thakur Mall, NH-8, Dahisar East, Mumbai – 401104",S6,187,State Board,English,5th to 7th,540,50,120,60,12:12,16:14,Ishita Banerjee
-"Dayanand Anglo Vedic Public School, Airoli","Plot No. 11, Sector 10, Airoli, Navi Mumbai – 400708",S1,188,State Board,English,5th to 7th,580,124,130,65,12:13,16:15,Kunal Singh
-NES International School,"Swapna Nagari, Malabar Hill Road, Mulund West, Mumbai – 400082",S2,189,State Board,English,9th to 12th,620,124,140,70,12:14,16:16,Divya Rao
-Amchi Shala,"J. K. Karmalkar Marg, Tilak Nagar, Mumbai – 400089",S3,183,State Board,English,9th to 12th,660,56,150,75,12:15,16:17,Siddharth Chatterjee
-The Cathedral & John Connon School,"6 Purshottamdas Thakurdas Marg, Fort, Mumbai – 400001",S4,184,State Board,Semi English,9th to 12th,700,90,160,80,12:16,16:18,Pooja Shah
-Ascend International School,"H Block, Bandra Kurla Complex, Bandra East, Mumbai – 400051",S5,185,State Board,Semi English,9th to 12th,740,144,170,85,12:17,16:19,Aditya Patil
-"St. Mary’s School, ICSE","Mazagaon, Nesbit Road, Mumbai – 400010",S6,186,State Board,Semi English,9th to 12th,780,693,180,90,12:18,16:20,Simran Kaur
-Podar International School,"Santacruz West, Mumbai – 400054",S1,187,State Board,Semi English,9th to 12th,820,55,190,95,12:19,16:21,Manish Gupta
-"Ryan International School, Malad","Evershine Nagar, Malad West, Mumbai – 400064",S2,188,State Board,Semi English,9th to 12th,860,743,200,100,12:20,16:22,Tanvi Agarwal
+Jamia Umar School,"Jasmine Mill Rd, kamla Nagar, Shammi Nagar, Mahim, Mumbai, Maharashtra 400017",Sector 1,187,State Board,English,From Class Nursery to Class 10,1200,350,22,12,15:1,16:1,Mr. Abdul Aziz
+Gandhi Memorial English High School,"Gnm Class 95 279 and 303 Kn Kamla Ngr, Opposite Mseb Building, Old R P Nagar, Matunga Labour Camp, Matunga East-400019",Sector 1,187,State Board,English,From 5th to Class 10 ; Also includes +2 for students,1650,1200,27,16,38:1,44:1,Mr Khairnair Bhagwat
+Banayan Tree English School,"Valley Road, Matunga Labour Camp, Dharavi, Mumbai 400017",Sector 1,189,State Board,English,Pre Primary to 10th,600,375,17,12,16:1,22:1,Ms Kavita
+Gandhi Memorial English Primary School,"R.D.Nagar, 60 Feet Road, N.l.Camp, Matunga, Mumbai, 400019",Sector 1,187,State Board,English,Pre Primary to 4th,1500,500,17,15,17:1,29:1,Mr Khairnair Bhagwat
+JEBIN School,NA,Sector 1,189,State Board,English,NA,600,400,15,0,0,27:1,NA
+Maulana Azad English High School,"Indira Nagar, RP Nagar, Dharavi, Mumbai, Maharashtra 400017",Sector 2,184,State Board,English,Primary and secondary school in separate classrooms,800,600,16,6,50:1,38:1,Mr. Krishna
+Shed School,"Police Station, near Municipal Dispensary, behind Dharavi, Block Number 5, Transit Camp, Indira Nagar, Dharavi, Mumbai, Maharashtra 400017",Sector 2,184,State Board,English,1st to 7th,500,200,9,6,17:1,22:1,Mr. Babaji
+Gausiya English School,"3, Sion, Indira Nagar, Dharavi, Mumbai, Maharashtra 400017",Sector 2,185,State Board,Semi English,Nursery to 7th,200,100,4,2,13:1,25:1,"Ms. Mehnaaz Sheikh
+"
+Mother Teresa English Medium High School,NA,Sector 2,185,State Board,English,NA,1250,1200,30,0,0,40:1,NA
+U. M. Thevar High School,"Kalyanwadi, Dharavi, Mumbai 400017",Sector 3,187,State Board,English,Pre Primary to 10th,1500,250,12,6,21:1,21:1,"Dr Vardharajan (owns multiple schools). The school is managed by incharges, there is no principal."
+Sri Sri Ravishakar Vidyamandir School,"N.D.G Compound, 266 E. Innawadi, behind Ganesh Mandir, Kalyanwadi, Dharavi 400017",Sector 3,187,State Board,English,Pre Primary to 10th,500,430,20,8,27:1,22:1,Ms Sapna Yerolla
+B.S.I.A.S School,"Near Aagaswadi Ganesh Mandir, Dharavi, Mumbai, 400017",Sector 3,188,State Board,English,Junior KG - 10th Grade,700,900,18,12,38:1,50:1,"Maran Nayagam, Bombay South Indian Adi-Dravid Sangh
+"
+Shri Ganesh Vidya Mandir High School,"Sant Kakkayya Marg, P.K. Kunte Nagar, Sheshwadi, Dharavi, Mumbai, Maharashtra 400017",Sector 3,188,State Board,Semi English,1st - 10th Grade,600,1200,27,25,24:1,44:1,"Marathi Medium- Rajaram Arote
+English Medium- Seeli Nadar"
+Bharat Ratna Dr. Babasaheb Ambedkar School & Junior College,"P.K. Kunte Nagar, RP Nagar, Dharavi, Mumbai, Maharashtra 400017",Sector 3,188,State Board,English,1st - 12th Grade,1000,1200,70,30,20:1,17:1,"Niranjan Nandapally (Andhra Karnataka Dalit Bargagal Trust)
+"
+Good Shepherd High School,"Dharavi Main Rd, Sheshwadi, Dharavi, Mumbai, Maharashtra 400017",Sector 3,188,State Board,English,1st - 9th Grade,1500,1000,38,18,28:1,26:1,"Prabhas Jebamania (Bombay Diocesan Society)
+"
+St Anthony English Medium Primary School,NA,Sector 3,188,State Board,English,NA,1650,800,30,0,0,27:1,NA
+English Habib Raza Primary School,NA,Sector 3,187,State Board,English,NA,800,600,9,0,0,67:1,NA
+Gnanjyoti Savitribhai Phule High School,"Dnyanjyoti Savitribai Phule High School (Pre-Primary & Primary English Medium), Behind Hanuman Mandir, Opp. Piwala Bunglow, Sion Bandra Link Road, Dharavi,",Sector 4,184,State Board,English,Nursery to 7th,1100,322,11,6,27:1,29:1,Pushpalatha
+Royal City English High School,"Damber compaund, Royal city school, Sion-Bandra Link Rd, opp. ONGC, Dharavi, Mumbai, Maharashtra 400017",Sector 4,184,State Board,English,Nursery to 10th,800,1050,40,20,26:1,26:1,Ms. Kavita Jadhav
+New Life English School,"Shop No. B108, Ground Floor, Balaji Nagar, Opp. Bharat Garage, Near Satara Bank, 90 Ft Road, Dharavi, Mumbai - 400017",Sector 4,188,State Board,English,"Pre-school, Nursery, Junior and Senior KG",700,230,4,4,29:1,58:1,Mr. Sachin Patil
+Al Qalam English School,"3V28+G25, 169, Naik Nagar, L.B.S. Marg, Sion, Lal Bahadur Shastri Marg, near Maharashtra Nature Park, Sion West, Sion, Mumbai, Maharashtra 400022",Sector 5,183,State Board,English,L.Kg - 10th,1500,275,22,12,11:1,13:1,Iftekhar Ahmed Khan
+Raje Shivaji Vidyalaya,"3V27+82M, P. M. G. P. Colony, Sion (W), Dharavi, Mumbai, Maharashtra 400017",Sector 5,183,State Board,English,Jr. kg to 4th,400,600,15,33,9:1,40:1,Meena Dodvankar
+Manohar Joshi College,"3V27+82M, P. M. G. P. Colony, Sion (W), Dharavi, Mumbai, Maharashtra 400017",Sector 5,183,State Board,English,"11th, 12th and Commerce (Graduation)",1250,258,10,33,4:1,26:1,Mrunal Ma’am
+Vivekalaya Pre School,"Ground Floor, Jangli Maharaj Seva Mandal, PMGP Colony , Dharavi",Sector 5,183,State Board,English,PlayGroup to Sr. KG,400,90,4,2,23:1,23:1,Simran Sunki
+Morning Star School,NA,Sector 5,183,State Board,English,NA,2500,800,25,0,0,32:1,NA

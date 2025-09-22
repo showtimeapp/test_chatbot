@@ -36,12 +36,14 @@ class MultiDatasetQueryHandler:
         """Detect which dataset to use and classify query type"""
         query_lower = query.lower()
         
-        # Dataset detection
+        # Dataset detection - Updated to include all religious structures
         temple_keywords = ['temple', 'deity', 'worship', 'footfall', 'religious', 
-                          'prayer', 'god', 'goddess', 'shrine', 'mandir']
+                          'prayer', 'god', 'goddess', 'shrine', 'mandir', 'mosque',
+                          'masjid', 'church', 'dargah', 'buddha', 'buddhist', 'gurudwara',
+                          'synagogue', 'faith', 'devotee', 'pilgrimage', 'sacred']
         school_keywords = ['school', 'student', 'teacher', 'education', 'classroom',
                           'board', 'fees', 'principal', 'grade', 'curriculum',
-                          'cbse', 'icse', 'study', 'academic', 'learning']
+                          'cbse', 'icse', 'study', 'academic', 'learning','medium of instruction']
         
         temple_score = sum(1 for keyword in temple_keywords if keyword in query_lower)
         school_score = sum(1 for keyword in school_keywords if keyword in query_lower)
@@ -81,15 +83,30 @@ class MultiDatasetQueryHandler:
     def text_to_sql(self, query: str, dataset: str) -> str:
         """Convert natural language to SQL query for specific dataset"""
         
-        # Determine table name
+        # Determine table name (keeping 'temples' for backward compatibility)
         table_name = 'temples' if dataset == 'temple' else 'schools'
         schema = self.table_schemas.get(table_name, "")
+        
+        # Add context about religious diversity for temple queries
+        context = ""
+        if dataset == 'temple':
+            context = """
+            Note: The 'temples' table contains various religious structures including:
+            - Hindu temples (mandir)
+            - Mosques (masjid)
+            - Churches
+            - Dargahs
+            - Buddhist temples
+            - Other religious structures
+            The 'deity' column may contain deity names, or religious figures/faiths.
+            """
         
         prompt = f"""
         Convert the following natural language query to a SQL query for a SQLite database.
         
         Database Schema:
         {schema}
+        {context}
         
         Natural Language Query: {query}
         
@@ -99,7 +116,7 @@ class MultiDatasetQueryHandler:
         - Return ONLY the SQL query, nothing else
         - For text comparisons, use LIKE with % wildcards
         - Limit results to 20 unless specified otherwise
-        - Be careful with column names specific to each table
+        - Be inclusive of all religious structures when querying the temples table
         
         SQL Query:
         """
@@ -151,7 +168,11 @@ class MultiDatasetQueryHandler:
         for row in sql_result['data'][:10]:
             data_str += f"{row}\n"
         
-        context = "temple data" if dataset == 'temple' else "school data"
+        # Updated context to be more inclusive
+        if dataset == 'temple':
+            context = "religious structures data (including temples, mosques, churches, dargahs, etc.)"
+        else:
+            context = "school data"
         
         prompt = f"""
         Convert the following SQL query results about {context} into a natural, conversational response.
@@ -164,6 +185,7 @@ class MultiDatasetQueryHandler:
         
         Provide a clear, informative response that directly answers the user's question.
         Format numbers nicely and be concise but complete.
+        Be inclusive and respectful of all religious faiths when discussing religious structures.
         """
         
         response = self.openai_client.chat.completions.create(

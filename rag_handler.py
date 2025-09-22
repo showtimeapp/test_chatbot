@@ -53,11 +53,15 @@ class MultiDatasetRAGHandler:
         """Detect which dataset to use based on query content"""
         query_lower = query.lower()
         
+        # Updated to include all religious structures
         temple_keywords = ['temple', 'deity', 'worship', 'footfall', 'religious', 
-                          'prayer', 'god', 'goddess', 'shrine', 'mandir','primary key']
+                          'prayer', 'god', 'goddess', 'shrine', 'mandir', 'mosque',
+                          'masjid', 'church', 'dargah', 'buddha', 'buddhist', 'gurudwara',
+                          'synagogue', 'faith', 'devotee', 'pilgrimage', 'sacred',
+                          'spiritual', 'worship place', 'religious structure']
         school_keywords = ['school', 'student', 'teacher', 'education', 'classroom',
-                          'board', 'fees', 'principal', 'grade', 'curriculum','fee','ratio'
-                          'cbse', 'icse', 'study', 'academic','medium Of Instruction']
+                          'board', 'fees', 'principal', 'grade', 'curriculum',
+                          'cbse', 'icse', 'study', 'academic','medium of instruction']
         
         temple_score = sum(1 for keyword in temple_keywords if keyword in query_lower)
         school_score = sum(1 for keyword in school_keywords if keyword in query_lower)
@@ -100,10 +104,11 @@ class DatasetRAG:
         if self.dataset_type == 'temple':
             for _, row in self.df.iterrows():
                 doc = f"""
-                Temple: {row.get('structurename', row.get('structure_name', 'N/A'))}
+                Religious Structure: {row.get('structurename', row.get('structure_name', 'N/A'))}
+                Type: Religious Place (Temple/Mosque/Church/Dargah/Buddha Temple/Other)
                 Sector: {row.get('sector', 'N/A')}
                 Ward: {row.get('ward', 'N/A')}
-                Deity: {row.get('deity', 'N/A')}
+                Deity/Faith: {row.get('deity', 'N/A')}
                 Area: {row.get('areasqft', row.get('area_sq_ft', 'N/A'))} sq ft
                 Footfall: {row.get('footfall', 'N/A')}
                 Established: {row.get('dateofestablishment', row.get('date_of_establishment', 'N/A'))}
@@ -161,10 +166,10 @@ class DatasetRAG:
                 item_name = self.df.iloc[idx].get('structurename', 
                            self.df.iloc[idx].get('structure_name', 'Unknown'))
                 results.append({
-                    'type': 'temple',
+                    'type': 'religious_structure',
                     'name': item_name,
                     'sector': self.df.iloc[idx].get('sector', 'N/A'),
-                    'deity': self.df.iloc[idx].get('deity', 'N/A'),
+                    'deity_faith': self.df.iloc[idx].get('deity', 'N/A'),
                     'similarity': float(similarities[idx]),
                     'full_info': self.documents[idx]
                 })
